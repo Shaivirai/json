@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h2>Await</h2>
+        <p id="para1"></p>
+        <script>
+            async function add(a,b)
+            {
+                let response= await a+b;
+                display (response);
+            }
+            function display(addition){
+                document.getElementById("para1").innerHTML= addition;
+            }
+            add(4,65);
+        </script>
+    </body>
+</html>
