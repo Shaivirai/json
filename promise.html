@@ -1,6 +1,12 @@
-<html>
-    <body>
-        <h2>PROMISE</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>PROMISE</h2>
     <p id="p1"></p>
     <script>
         function mydisp(some)
@@ -9,7 +15,7 @@
         }
         function sum(a,b)
         {
-            var sum= a+b;
+            var sum= a+ b;
             mydisp(sum);
         }
         let myPromise= new Promise(function(myResolve,myReject)
@@ -25,8 +31,10 @@
     }
     });
     myPromise.then(
-        function(value){sum(8,9);},
+        function(value){ sum( 8,98);},
         function(error){sum(error);}
-);
+    );
+
+    </script>
 </body>
 </html>
