@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h2>CALL BACK</h2>
+        <p id ="p1"></p>
+        <script>
+            function mydisp(value)
+            {
+                document.getElementById("p1").innerHTML=value;
+            }
+            function add(num1,num2,myCallback)
+            {
+                let sum=num1+num2;
+                myCallback(sum);
+            }
+            add(78,53,mydisp);
+        </script>
+    </body>
+
+
+</html>
